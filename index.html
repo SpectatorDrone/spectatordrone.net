@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>SpectatorDrone - online service virtual trips in real time</title>
+        <meta content="" name="description">
+        <meta content="" name="author">
+        <meta content="" name="keywords">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+        <!-- Birdman v1.1 || ex nihilo || April - May 2015 -->
+        <!-- style start -->
+        <link href="css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css">
+        <link href="css/style-dark.css" media="all" rel="stylesheet" type="text/css">
+        <link href="css/flexslider.css" media="all" rel="stylesheet" type="text/css">
+        <link href="css/default-skin/default-skin-dark.css" media="all" rel="stylesheet" type="text/css">
+        <link href="css/font-awesome-4.3.0/css/font-awesome.css" media="all" rel="stylesheet" type="text/css"><!-- style end -->
+        <!-- google fonts start -->
+        <link href=
+        "https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900%7COswald:300,400,700%7CDosis:200,300,400,500,600,700,800%7COpen+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic"
+        rel="stylesheet" type="text/css"><!-- google fonts end -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- screen loader start -->
+        <div class="screen-loader"></div><!-- screen loader end -->
+        <!-- preload start -->
+        <div id="preload">
+            <!-- preload status start -->
+            <div id="preload-status"></div><!-- preload status end -->
+        </div><!-- preload end -->
+        <!-- YTPlayer containment start -->
+        <div id="videoContainment"></div><!-- YTPlayer containment end -->
+        <!-- YTPlayer start -->
+        <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=khfgj149Tgo', containment:'#videoContainment', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, addRaster:false, quality:'default'}"></a><!-- YTPlayer end -->
+        <!-- curtains start -->
+        <div id="curtains"></div><!-- curtains end -->
+        <!-- top shade start -->
+        <div id="top-shade"></div><!-- top shade end -->
+        <!-- preload content start -->
+        <div class="preload-content"></div><!-- preload content end -->
+        <!-- birds start -->
+        <div id="birdman-container"></div>
+        <div id="birdman-holder">
+            <canvas></canvas>
+        </div><!-- birds end -->
+        <!-- navigation start -->
+        <!-- <div class="menu btn-nav">
+            <a href="#"><span></span></a>
+        </div>
+        <nav>
+            <ul class="main-nav brackets">
+                <li>
+                    <a class="menu-state active" href="#" id="fire-home">Home</a>
+                </li>
+                <li>
+                    <a class="menu-state" href="#" id="fire-about">About</a>
+                </li>
+                <li>
+                    <a class="menu-state" href="#" id="fire-services">Services</a>
+                </li>
+                <li>
+                    <a class="menu-state" href="#" id="fire-photos">Photos</a>
+                </li>
+                <li>
+                    <a class="menu-state" href="#" id="fire-contact">Contact</a>
+                </li>
+            </ul>
+        </nav> --><!-- navigation end -->
+        <!-- upper page start -->
+        <div class="upper-page current" id="home">
+            <!-- center container start -->
+            <div class="center-container-home">
+                <!-- center block start -->
+                <div class="center-block">
+                    <!-- square start -->
+                    <div class="square">
+                        <span class="l1"></span>
+                        <span class="l2"></span>
+                        <span class="l3"></span>
+                        <span class="l4"></span>
+                    </div><!-- square end -->
+                    <!-- upper content start -->
+                    <div class="upper-content">
+                        <!-- container start -->
+                        <div class="container sections">
+                            <!-- row start -->
+                            <div class="row intro-down">
+                                <div class="cycle-it-home">
+                                    <a class="cycle-text" href="#">Online service virtual trips in real time</a>
+                                </div>
+                                <!-- intro start -->
+                                <div id="intro-wrapper">
+                                    <div class="flexslider">
+                                        <ul class="slides">
+                                            <li>
+                                                <h1>
+                                                    Spectator
+                                                </h1>
+                                            </li>
+                                            <li>
+                                                <h1>
+                                                    Drone
+                                                </h1>
+                                            </li>
+                                            <li>
+                                                <h1>
+                                                    Spectator.Drone
+                                                </h1>
+                                            </li>
+											<li>
+                                                <h1>
+                                                    SOON
+                                                </h1>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- newsletter form start -->
+                                    <!-- <div id="subscribe-wrapper">
+                                        <div id="newsletter">
+                                            <div class="newsletter">
+                                                <form action="subscribe.php" id="subscribe" method="post" name="subscribe">
+                                                    <span class="input input--kuro"><input class="subscriberequiredField subscribeemail input__field input__field--kuro" id="subscribeemail" name="subscribeemail" type="text">
+                                                    <label class="input__label input__label--kuro" for="subscribeemail"><span class=
+                                                    "mail input__label-content input__label-content--kuro">Email</span></label> <button class="submit-button" id="submit" type=
+                                                    "submit">Subscribe</button></span>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div> --><!-- newsletter form end -->
+                                </div><!-- intro end -->
+                            </div><!-- row end -->
+                            <!-- row start -->
+                            <div class="row">
+                                <!-- decoration social start -->
+                                <div class="decoration-social">
+                                    <div class="decoration-social-left"></div>
+                                    <!-- social icons start -->
+                                    <div class="social-icons-wrapper">
+                                        <ul class="social-icons">
+											<li>
+                                                <a class="fa fa-instagram fa-2x" href="https://www.instagram.com/spectatordrone/"></a>
+                                            </li>
+                                            <li>
+                                                <a class="fa fa-facebook-square fa-2x" href="https://www.facebook.com/spectatordrone/"></a>
+                                            </li>
+                                            <li>
+                                                <a class="fa fa-linkedin-square fa-2x" href="https://www.linkedin.com/company/spectatordronenet/"></a>
+                                            </li>
+                                            <!-- <li>
+                                                <a class="fa fa-twitter-square fa-2x" href="#"></a>
+                                            </li>
+											<li>
+                                                <a class="fa fa-google-plus-square fa-2x" href="#"></a>
+                                            </li>
+                                            <li>
+                                                <a class="fa fa-youtube-square fa-2x" href="#"></a>
+                                            </li> -->
+                                        </ul>
+                                    </div><!-- social icons end -->
+                                    <div class="decoration-social-right"></div>
+                                </div><!-- decoration social end -->
+                            </div><!-- row end -->
+                        </div><!-- container end -->
+                        <!-- countdown start -->
+                        <div id="countdown-wrapper">
+                            <ul id="countdown">
+                                <!-- days start -->
+                                <li>
+                                    <span class="days">00</span>
+                                    <p class="timeRefDays">
+                                        days
+                                    </p>
+                                </li><!-- days end -->
+                                <!-- seconds start -->
+                                <li>
+                                    <span class="seconds">00</span>
+                                    <p class="timeRefSeconds">
+                                        seconds
+                                    </p>
+                                </li><!-- seconds end -->
+                            </ul>
+                        </div><!-- countdown end -->
+                    </div><!-- center container end -->
+                </div><!-- center block end -->
+            </div><!-- upper content end -->
+        </div><!-- upper page end -->
+        <!-- scripts start -->
+        <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+		<script src="js/plugins-dark.js" type="text/javascript"></script>
+        <script src="js/supersized.3.2.7.bg-video.js" type="text/javascript"></script>
+		<script src="js/birdman.js" type="text/javascript"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- scripts end -->
+    </body>
+</html>
